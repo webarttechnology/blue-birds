@@ -111,7 +111,7 @@
                     <div class="inner wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms">
                         <div class="title-box">
                             <div class="dots"><span></span></div>
-                            <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span>Welcome To Neuro <br>Driving Schools</span></h2>
+                            <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span>Welcome To Bluebird <br>Driving School</span></h2>
                         </div>
                         <div class="text-content text">Since 2010, throughout Northern America, we, School of Driving, have earned a reputation for providing responsible, calm, and encouraging driving lessons. Wherever you live, tell us where you are, and we'll gladly feel as if you are part of our team at School  of Driving as you start your driving lessons and begin to learn to drive.</div>
                         <div class="row clearfix">
