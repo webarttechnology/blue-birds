@@ -4,7 +4,7 @@
     <!-- Banner Section -->
     <section class="banner-section bannercntpb">
         <div class="bg-video-wrap">
-            <video src="https://designsupply-web.com/samplecontent/vender/codepen/20181014.mp4" loop="" muted="" autoplay="">
+            <video src="images/vid1.mp4" loop="" muted="" autoplay="">
             </video>
             <div class="overlay">
             </div>
@@ -697,7 +697,7 @@
                 <div class="dots"><span></span></div>
                 <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span>Check what <br>people say about.</span></h2>
          </div>    
-         <iframe title="Embedded Content" name="htmlComp-iframe" width="100%" height="1091" allow="fullscreen" data-src="" src="https://www-vitaliteeth-com.filesusr.com/html/ca2a5d_bbf2dedbf7b9f5ff9eb4bc456cf20362.html"></iframe>
+         <div class="elfsight-app-115ef680-4585-4caf-bd6d-17bb29f08b39" data-elfsight-app-lazy></div>
        </div>
     </section>
 

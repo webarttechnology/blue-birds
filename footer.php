@@ -104,6 +104,8 @@
 <script src="js/owl.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/custom-script.js"></script>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
 </body>
 
 </html>

@@ -7098,7 +7098,7 @@ body.visible-sidebar{
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
 }
 
 .bannercntpb .bg-video-wrap video {
@@ -7111,7 +7111,7 @@ body.visible-sidebar{
     width: 100%;
     height: 100vh;
     position: absolute;
-    background-image: linear-gradient(45deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7));
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.3));
     top: 0;
     left: 0;
     background-size: 3px 3px;
@@ -7127,17 +7127,18 @@ body.visible-sidebar{
     text-align: center;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 99;
 }
 
 .bannercntpb .content h5 {
-  font-family: 'Raleway', sans-serif;
-  color: #ffffff;
-  font-size: 27px;
-  font-weight: 500;
-  width: 90%;
-  margin: 0 auto;
-  line-height: 43px;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 700;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 43px;
+    text-transform: capitalize;
 }
 
 .bannercntpb .content h5 span {
