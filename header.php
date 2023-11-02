@@ -32,7 +32,7 @@
                 <div class="inner clearfix">
                     <div class="top-left clearfix">
                         <ul class="social clearfix">
-                            <li>Subscribe For Latest Update</li>
+                            <!-- <li>Subscribe For Latest Update</li> -->
                             <li><a href="https://www.facebook.com/p/Blue-Bird-Driving-School-Calgary-100063759630061" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -40,7 +40,9 @@
                     </div>
                     <div class="top-right clearfix">
                         <div class="cont-us">
-                            <i class="icon fa fa-headphones"></i> Need Any Help: <a href="tel:+1 403.613.8074">+1 403.613.8074</a> or <a href="mailto:info@bluebirddriving.ca">info@bluebirddriving.ca</a>
+                            <li><i class="icon fa fa-phone"></i><a href="tel:+1 403.613.8074">+1 403.613.8074</a></li>
+                            <li><i class="icon fa fa-envelope"></i><a href="mailto:info@bluebirddriving.ca">info@bluebirddriving.ca</a></li>
+                            <li><a href="#" class="bntbtn">Book Now</a></li>
                         </div>
                     </div>
                 </div>
@@ -61,7 +63,7 @@
                         <div class="nav-outer clearfix">         
                             <nav class="main-menu">
                                 <ul class="navigation clearfix">
-                                    <li class="current"><a href="index.html">Home</a>
+                                    <li class="current"><a href="index.php">Home</a>
                                         <!-- <ul>
                                             <li><a href="index.html">Home 01</a></li>
                                             <li><a href="index-2.html">Home 02</a></li>

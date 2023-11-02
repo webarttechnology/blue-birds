@@ -11,12 +11,12 @@
                                 <div class="about">
                                     <div class="footer-logo"><a href="index.html" title="Driving School HTML Template"><img src="images/blue_logo.png" alt="" title="Driving School HTML Template"></a></div>
                                     <div class="text">Cillum dolre fugiat nula pariatur excepteur anim idet laborum. Sed ut perspiciatis und kmnis iste natus goluptatem.</div>
-                                    <div class="address"><span class="icon fa-light fa-map-marker-alt"></span> 52 Serina Avenue, Highland Mills New York 10930 - USA</div>
-                                    <div class="phone">
+                                    <div class="address"><span class="icon fa-light fa-map-marker-alt"></span>90 Martinridge Grove NE, Calgary, AB, T3J 3M4</div>
+                                    <!-- <div class="phone">
                                         <span class="icon fa fa-phone"></span>
                                         <span class="subtitle">Start a New Project</span>
                                         <a href="tel:+1 403.613.8074" class="theme-btn">+1 403.613.8074</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
             <div class="auto-container">
                 <div class="inner clearfix">
                     <div class="copyright">Copyrights &copy; 2023 Blue Bird. <a href="#">Privacy Policy</a>  /  <a href="#">Booking Guide</a></div>
-                    <div class="social-links">
+                    <div class="social-links d-none">
                         <ul class="clearfix">
                             <li><a href="https://www.facebook.com/p/Blue-Bird-Driving-School-Calgary-100063759630061" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -105,6 +105,98 @@
 <script src="js/wow.js"></script>
 <script src="js/custom-script.js"></script>
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script>
+console.clear();
+
+const { gsap } = window;
+
+const cursorOuter = document.querySelector(".cursor--large");
+const cursorInner = document.querySelector(".cursor--small");
+let isStuck = false;
+let mouse = {
+    x: -100,
+    y: -100,
+};
+
+// Just in case you need to scroll
+let scrollHeight = 0;
+window.addEventListener('scroll', function(e) {
+    scrollHeight = window.scrollY
+})
+
+let cursorOuterOriginalState = {
+    width: cursorOuter.getBoundingClientRect().width,
+    height: cursorOuter.getBoundingClientRect().height,
+};
+const buttons = document.querySelectorAll("main button");
+
+buttons.forEach((button) => {
+    button.addEventListener("pointerenter", handleMouseEnter);
+    button.addEventListener("pointerleave", handleMouseLeave);
+});
+
+document.body.addEventListener("pointermove", updateCursorPosition);
+document.body.addEventListener("pointerdown", () => {
+    gsap.to(cursorInner, 0.15, {
+        scale: 2,
+    });
+});
+document.body.addEventListener("pointerup", () => {
+    gsap.to(cursorInner, 0.15, {
+        scale: 1,
+    });
+});
+
+function updateCursorPosition(e) {
+    mouse.x = e.pageX;
+    mouse.y = e.pageY;
+}
+
+function updateCursor() {
+    gsap.set(cursorInner, {
+        x: mouse.x,
+        y: mouse.y,
+    });
+
+    if (!isStuck) {
+        gsap.to(cursorOuter, {
+            duration: 0.15,
+            x: mouse.x - cursorOuterOriginalState.width/2,
+            y: mouse.y - cursorOuterOriginalState.height/2,
+        });
+    }
+
+    requestAnimationFrame(updateCursor);
+}
+
+updateCursor();
+
+function handleMouseEnter(e) {
+    isStuck = true;
+    const targetBox = e.currentTarget.getBoundingClientRect();
+    gsap.to(cursorOuter, 0.2, {
+        x: targetBox.left, 
+        y: targetBox.top + scrollHeight,
+        width: targetBox.width,
+        height: targetBox.width,
+        borderRadius: 0,
+        backgroundColor: "rgba(255, 255, 255, 0.1)",
+    });
+}
+
+function handleMouseLeave(e) {
+    isStuck = false;
+    gsap.to(cursorOuter, 0.2, {
+        width: cursorOuterOriginalState.width,
+        height: cursorOuterOriginalState.width,
+        borderRadius: "50%",
+        backgroundColor: "transparent",
+    });
+}
+
+</script>
 
 </body>
 

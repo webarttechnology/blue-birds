@@ -9,7 +9,7 @@
             <div class="overlay">
             </div>
             <div class="content">
-                <h5><span>Blue Bird Driving School</span> in Calgary offers safe and enjoyable driving lessons for beginners and experienced drivers.We focus on positive, personalized learning, allowing you to progress at your own pace.</h5>
+                <h5 id="text"></h5>
             </div> 
         </div>
         <div class="banner-container">
@@ -85,6 +85,8 @@
 
             </div>   
         </div>
+        <div class="cursor cursor--large"></div>
+        <div class="cursor cursor--small"></div>
     </section>
     <!--End Banner Section -->
 
@@ -98,6 +100,8 @@
                 </div>
             </div>
         </div>
+        <div class="cursor cursor--large"></div>
+        <div class="cursor cursor--small"></div>
     </section>
 
     <!--Welcome Section-->
@@ -107,48 +111,62 @@
         <div class="auto-container">
             <div class="row clearfix">
                 <!--Text Col-->
-                <div class="text-col col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                <div class="text-col col-md-12">
                     <div class="inner wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms">
                         <div class="title-box">
                             <div class="dots"><span></span></div>
-                            <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span>Welcome To Bluebird <br>Driving School</span></h2>
+                            <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span>Discover Excellence at Blue Bird Driving School – Calgary's Top Choice! </span></h2>
                         </div>
-                        <div class="text-content text">Since 2010, throughout Northern America, we, School of Driving, have earned a reputation for providing responsible, calm, and encouraging driving lessons. Wherever you live, tell us where you are, and we'll gladly feel as if you are part of our team at School  of Driving as you start your driving lessons and begin to learn to drive.</div>
+                        <div class="text-content text">With over 5 years of expertise in Alberta, we specialize in crafting skilled, defensive, and safe drivers. Our patient, professional instructors are dedicated to your success, as reflected in our high passing rate of over 95%. Join us and experience driving excellence!</div>
                         <div class="row clearfix">
                             <!--Block-->
-                            <div class="wel-block col-lg-6 col-md-6 col-sm-12">
+                            <div class="wel-block col-md-4">
                                 <div class="inner-box">
                                     <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
-                                    <h4>We are certified</h4>
-                                    <div class="text">We are a certified driving training center. we will help you.</div>
+                                    <h4>Certified Instructors</h4>
+                                    <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
                                 </div>
                             </div>
                             <!--Block-->
-                            <div class="wel-block col-lg-6 col-md-6 col-sm-12">
+                            <div class="wel-block col-md-4">
                                 <div class="inner-box">
                                     <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
-                                    <h4>Award Win</h4>
-                                    <div class="text">In the last few years we selected lot of national award. that awesome.</div>
+                                    <h4>Car Rentals</h4>
+                                    <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
                                 </div>
                             </div>
                             <!--Block-->
-                            <div class="wel-block col-lg-6 col-md-6 col-sm-12">
+                            <div class="wel-block col-md-4">
                                 <div class="inner-box">
                                     <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
-                                    <h4>Award Win</h4>
-                                    <div class="text">We are a super expert team. they help you for your betterment.</div>
+                                    <h4>Insurance Reduction Courses</h4>
+                                    <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
                                 </div>
                             </div>
                             <!--Block-->
-                            <div class="wel-block col-lg-6 col-md-6 col-sm-12">
+                            <div class="wel-block col-md-4">
                                 <div class="inner-box">
                                     <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
-                                    <h4>Fast Service</h4>
-                                    <div class="text">We give you fast and clean service as your all need.</div>
+                                    <h4>Personalized Lessons</h4>
+                                    <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
+                                </div>
+                            </div>
+                            <div class="wel-block col-md-4">
+                                <div class="inner-box">
+                                    <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
+                                    <h4>Self Paced Learning</h4>
+                                    <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
+                                </div>
+                            </div>
+                            <div class="wel-block col-md-4">
+                                <div class="inner-box">
+                                    <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
+                                    <h4>Top-Rated School</h4>
+                                    <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="lower-links clearfix">
+                        <!-- <div class="lower-links clearfix">
                             <div class="link"><a href="#" class="theme-btn btn-style-one"><span>DISCOVER MORE</span></a></div>
                             <div class="link">
                                 <div class="phone">
@@ -157,11 +175,11 @@
                                     <span class="subtitle">Phone Line</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!--Image Col-->
-                <div class="image-col col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                <!-- <div class="image-col col-xl-5 col-lg-6 col-md-12 col-sm-12">
                     <div class="inner wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
                         <div class="client-badge wow zoomInStable" data-wow-duration="2500ms" data-wow-delay="500ms"><div class="inner-box"><span class="percent">90%</span>Clients</div></div>
                         <div class="images clearfix">
@@ -172,13 +190,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
 
     <!--Services-->
-    <section class="services-one">
+    <section class="services-one d-none">
         <div class="auto-container">
             <div class="title-box centered">
                 <div class="dots"><span></span></div>
@@ -426,6 +444,67 @@
         </div>
     </section>        
 
+    <section class="why-us-three">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="text-col col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                    <div class="inner wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInLeft;">
+                        <div class="title-box style-two">
+                            <h2><span>Our Four-step Process</span></h2>
+                        </div>
+                        <div class="why-info">
+                            <div class="clearfix">
+                                <div class="why-info-block">
+                                    <div class="inner-box">
+                                        <div class="icon-box"><span class="fa-light fa-comment-alt"></span></div>
+                                        <div class="count"><span>Call</span></div>
+                                        <!-- <div class="cat">Call</div> -->
+                                    </div>
+                                </div>
+                                <div class="why-info-block">
+                                    <div class="inner-box">
+                                        <div class="icon-box"><span class="fa-light fa-car"></span></div>
+                                        <div class="count"><span>Appointment</span></div>
+                                        <!-- <div class="cat">Appointment</div> -->
+                                    </div>
+                                </div>
+                                <div class="why-info-block">
+                                    <div class="inner-box">
+                                        <div class="icon-box"><span class="fa-light fa-comment-alt"></span></div>
+                                        <div class="count"><span>Road Test</span></div>
+                                        <!-- <div class="cat">Road Test</div> -->
+                                    </div>
+                                </div>
+                                <div class="why-info-block">
+                                    <div class="inner-box">
+                                        <div class="icon-box"><span class="fa-light fa-comment-alt"></span></div>
+                                        <div class="count"><span>Pass</span></div>
+                                        <!-- <div class="cat">Pass</div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Image Col-->
+                <div class="image-col col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                    <div class="inner wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInRight;">
+                        <div class="image-box">
+                            <div class="image"><img src="images/resource/image-14.jpg" alt="" title=""></div>
+                            <div class="over-text">We Are Since 2006 ! Over 200 Awards</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="btnprty">
+                        <a href="#" class="dstvbtn">DISCOVER MORE TO SCHEDULE YOUR LESSONS</a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
     <!--TEam-->
     <section class="team-section d-none">
         <div class="image-layer" style="background-image: url(images/background/bg-team.png);"></div>
@@ -557,11 +636,11 @@
     </section>
 
     <!--Programs Section-->
-    <section class="programs-section">
+    <section class="programs-section d-none">
         <div class="auto-container">
             <div class="title-box">
                 <div class="dots"><span></span></div>
-                <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span>Check out latest <br>Programs</span></h2>
+                <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span>Latest Resources</span></h2>
             </div>
             <div class="carousel-box">
                 <div class="programs-carousel owl-theme owl-carousel">
@@ -691,8 +770,92 @@
         </div>
     </section>
 
+    <section class="programs-section">
+        <div class="auto-container">
+            <div class="title-box">
+                <div class="dots"><span></span></div>
+                <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span>Latest Resources</span></h2>
+            </div>
+            <div class="carousel-box">
+                <div class="programs-carousel program-block-two owl-theme owl-carousel">
+                    <!--Block-->
+                    <div class="program-block">
+                        <div class="inner-box">
+                        <div class="image-box">
+                            <div class="image"><a href="#"><img src="images/resource/image-11.jpg" alt="" title=""></a></div>
+                            <div class="icon-box"><img src="images/resource/steering-icon.svg" alt="" title=""></div>
+                        </div>
+                        <div class="mid-box">
+                            <h4><a href="#">Alberta Road Test Booking</a></h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
+                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                     </div>
+                    </div>
+                    <!--Block-->
+                    <div class="program-block">
+                        <div class="inner-box">
+                        <div class="image-box">
+                            <div class="image"><a href="#"><img src="images/resource/image-12.jpg" alt="" title=""></a></div>
+                            <div class="icon-box"><img src="images/resource/steering-icon.svg" alt="" title=""></div>
+                        </div>
+                        <div class="mid-box">
+                            <h4><a href="#">Alberta Drivers Guide (2023)</a></h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
+                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                    </div>
+                    </div>
+                    <!--Block-->
+                    <div class="program-block">
+                        <div class="inner-box">
+                        <div class="image-box">
+                            <div class="image"><a href="#"><img src="images/resource/image-13.jpg" alt="" title=""></a></div>
+                            <div class="icon-box"><img src="images/resource/steering-icon.svg" alt="" title=""></div>
+                        </div>
+                        <div class="mid-box">
+                            <h4><a href="#">Class 7 Practice Test</a></h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
+                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                    </div>
+                    </div>
+                    <!--Block-->
+                    <div class="program-block">
+                        <div class="inner-box">
+                        <div class="image-box">
+                            <div class="image"><a href="#"><img src="images/resource/image-12.jpg" alt="" title=""></a></div>
+                            <div class="icon-box"><img src="images/resource/steering-icon.svg" alt="" title=""></div>
+                        </div>
+                        <div class="mid-box">
+                            <h4><a href="#">Alberta Transportation</a></h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
+                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                    </div>
+                    </div>
+                    <div class="program-block">
+                        <div class="inner-box">
+                        <div class="image-box">
+                            <div class="image"><a href="#"><img src="images/resource/image-11.jpg" alt="" title=""></a></div>
+                            <div class="icon-box"><img src="images/resource/steering-icon.svg" alt="" title=""></div>
+                        </div>
+                        <div class="mid-box">
+                            <h4><a href="#">Traffic Safety Programs</a></h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
+                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
      <section class="testimonial-section mb-5">
-       <div class="container"> 
+       <div class="container-fluid"> 
          <div class="title-box centered">
                 <div class="dots"><span></span></div>
                 <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span>Check what <br>people say about.</span></h2>
