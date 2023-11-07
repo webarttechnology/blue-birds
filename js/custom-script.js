@@ -493,7 +493,7 @@
 
 
 const textDisplay = document.getElementById('text')
-const phrases = ['Experience safe & enjoyable lessons with <span>Blue Bird Driving School!</span> Personalized driving lessons for all levels, empowering you to learn at your own pace. Drive with confidence today!']
+const phrases = ['Experience safe & enjoyable lessons with Blue Bird Driving School! Personalized driving lessons for all levels, empowering you to learn at your own pace. <span>Drive with confidence</span> today!']
 let i = 0
 let j = 0 
 let currentPhrase = []
