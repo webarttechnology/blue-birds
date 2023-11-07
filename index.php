@@ -105,7 +105,7 @@
     </section>
 
     <!--Welcome Section-->
-    <section class="welcome-section">
+    <section class="welcome-section icnsty">
         <div class="bg-left"><i class="icon"><img src="images/resource/steering-big.svg" alt=""></i></div>
         <div class="bg-right" style="background-image: url(images/background/wheel-image-1.png);"></div>
         <div class="auto-container">
@@ -122,7 +122,7 @@
                             <!--Block-->
                             <div class="wel-block col-md-4">
                                 <div class="inner-box">
-                                    <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
+                                    <div class="icon"><img src="images/ins.png" alt=""></div>
                                     <h4>Certified Instructors</h4>
                                     <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
                                 </div>
@@ -130,7 +130,7 @@
                             <!--Block-->
                             <div class="wel-block col-md-4">
                                 <div class="inner-box">
-                                    <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
+                                    <div class="icon"><img src="images/rent.png" alt=""></div>
                                     <h4>Car Rentals</h4>
                                     <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
                                 </div>
@@ -138,7 +138,7 @@
                             <!--Block-->
                             <div class="wel-block col-md-4">
                                 <div class="inner-box">
-                                    <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
+                                    <div class="icon"><img src="images/inscu.png" alt=""></div>
                                     <h4>Insurance Reduction Courses</h4>
                                     <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
                                 </div>
@@ -146,21 +146,21 @@
                             <!--Block-->
                             <div class="wel-block col-md-4">
                                 <div class="inner-box">
-                                    <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
+                                    <div class="icon"><img src="images/plsns.png" alt=""></div>
                                     <h4>Personalized Lessons</h4>
                                     <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
                                 </div>
                             </div>
                             <div class="wel-block col-md-4">
                                 <div class="inner-box">
-                                    <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
+                                    <div class="icon"><img src="images/lrnng.png" alt=""></div>
                                     <h4>Self Paced Learning</h4>
                                     <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
                                 </div>
                             </div>
                             <div class="wel-block col-md-4">
                                 <div class="inner-box">
-                                    <div class="icon"><img src="images/icons/check-1.svg" alt=""></div>
+                                    <div class="icon"><img src="images/scl.png" alt=""></div>
                                     <h4>Top-Rated School</h4>
                                     <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus sunt eum iusto enim fugiat blanditiis, amet, illo numquam sed assumenda.</div>
                                 </div>
@@ -397,7 +397,7 @@
         </div>
     </section>
 
-    <section class="why-us">
+    <section class="why-us mb-5">
         <div class="auto-container">
             <div class="title-box">
                 <div class="dots"><span></span></div>
@@ -439,71 +439,15 @@
                             <div class="text">Pass your road test and get your license!</div>
                         </div>
                     </div>
-              </div>  
+              </div> 
+              <div class="col-md-12">
+                    <div class="btnprty mt-5">
+                        <a href="#" class="dstvbtn">DISCOVER MORE TO SCHEDULE APPOINTMENT</a>
+                    </div>
+                </div>     
             </div>    
         </div>
     </section>        
-
-    <section class="why-us-three">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <div class="text-col col-xl-7 col-lg-7 col-md-12 col-sm-12">
-                    <div class="inner wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInLeft;">
-                        <div class="title-box style-two">
-                            <h2><span>Our Four-step Process</span></h2>
-                        </div>
-                        <div class="why-info">
-                            <div class="clearfix">
-                                <div class="why-info-block">
-                                    <div class="inner-box">
-                                        <div class="icon-box"><span class="fa-light fa-comment-alt"></span></div>
-                                        <div class="count"><span>Call</span></div>
-                                        <!-- <div class="cat">Call</div> -->
-                                    </div>
-                                </div>
-                                <div class="why-info-block">
-                                    <div class="inner-box">
-                                        <div class="icon-box"><span class="fa-light fa-car"></span></div>
-                                        <div class="count"><span>Appointment</span></div>
-                                        <!-- <div class="cat">Appointment</div> -->
-                                    </div>
-                                </div>
-                                <div class="why-info-block">
-                                    <div class="inner-box">
-                                        <div class="icon-box"><span class="fa-light fa-comment-alt"></span></div>
-                                        <div class="count"><span>Road Test</span></div>
-                                        <!-- <div class="cat">Road Test</div> -->
-                                    </div>
-                                </div>
-                                <div class="why-info-block">
-                                    <div class="inner-box">
-                                        <div class="icon-box"><span class="fa-light fa-comment-alt"></span></div>
-                                        <div class="count"><span>Pass</span></div>
-                                        <!-- <div class="cat">Pass</div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Image Col-->
-                <div class="image-col col-xl-5 col-lg-5 col-md-12 col-sm-12">
-                    <div class="inner wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInRight;">
-                        <div class="image-box">
-                            <div class="image"><img src="images/resource/image-14.jpg" alt="" title=""></div>
-                            <div class="over-text">We Are Since 2006 ! Over 200 Awards</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="btnprty">
-                        <a href="#" class="dstvbtn">DISCOVER MORE TO SCHEDULE YOUR LESSONS</a>
-                    </div>
-                </div>    
-            </div>
-        </div>
-    </section>
 
     <!--TEam-->
     <section class="team-section d-none">
@@ -789,7 +733,7 @@
                             <h4><a href="#">Alberta Road Test Booking</a></h4>
                             <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                         </div>
-                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                        <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
                      </div>
                     </div>
                     <!--Block-->
@@ -803,7 +747,7 @@
                             <h4><a href="#">Alberta Drivers Guide (2023)</a></h4>
                             <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                         </div>
-                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                        <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
                     </div>
                     </div>
                     <!--Block-->
@@ -817,7 +761,7 @@
                             <h4><a href="#">Class 7 Practice Test</a></h4>
                             <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                         </div>
-                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                        <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
                     </div>
                     </div>
                     <!--Block-->
@@ -831,7 +775,7 @@
                             <h4><a href="#">Alberta Transportation</a></h4>
                             <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                         </div>
-                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                        <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
                     </div>
                     </div>
                     <div class="program-block">
@@ -844,7 +788,7 @@
                             <h4><a href="#">Traffic Safety Programs</a></h4>
                             <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                         </div>
-                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                        <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
                     </div>
                     </div>
                 </div>
@@ -858,7 +802,7 @@
        <div class="container-fluid"> 
          <div class="title-box centered">
                 <div class="dots"><span></span></div>
-                <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span>Check what <br>people say about.</span></h2>
+                <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span>Check what people say about.</span></h2>
          </div>    
          <div class="elfsight-app-115ef680-4585-4caf-bd6d-17bb29f08b39" data-elfsight-app-lazy></div>
        </div>

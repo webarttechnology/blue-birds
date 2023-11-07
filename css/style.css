@@ -1069,7 +1069,7 @@ form label.error{
   -webkit-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
-  cursor:none;
+/*  cursor:none;*/
 }
 
 .header-two .header-upper{
@@ -1269,7 +1269,7 @@ form label.error{
   -ms-transition:all 300ms ease;
   -o-transition:all 300ms ease;
   transition:all 300ms ease;
-  cursor:none;
+/*  cursor:none;*/
 }
 
 .header-two .main-menu .navigation > li > a{
@@ -3355,7 +3355,8 @@ body.visible-sidebar{
     /* min-height: 300px; */
     height: 350px;
     background: #ffffff;
-    box-shadow: 1px 1px 10px 2px #ff8f1f;
+/*    box-shadow: 1px 1px 10px 2px #ff8f1f;*/
+    box-shadow: 1px 1px 10px 2px #f5bf89;
     border-radius: 25px;
 }
 
@@ -3804,7 +3805,7 @@ body.visible-sidebar{
 
 .testimonial-section{
   position: relative;
-  padding: 130px 0px 0px;
+  padding:50px 0px 0px;
 }
 
 .testimonial-section .auto-container{
@@ -7255,4 +7256,13 @@ body.visible-sidebar{
 
 .dstvbtn:hover {
   color:#fff;
+}
+
+.testimonial-section .title-box {
+   max-width: 100% !important;
+}
+
+.icnsty .icon {
+  width:40px;
+  height: 40px;
 }

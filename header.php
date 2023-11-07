@@ -8,8 +8,8 @@
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
-<link rel="shortcut icon" href="images/imgg.png" type="image/x-icon">
-<link rel="icon" href="images/imgg.png" type="image/x-icon">
+<link rel="shortcut icon" href="images/imgg.png">
+<link rel="icon" href="images/imgg.png">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -22,7 +22,7 @@
   <div class="page-wrapper"> 
   
     <!-- Preloader -->
-    <div class="preloader"></div>
+    <!-- <div class="preloader"></div> -->
 
     <div class="search-backdrop"></div>
     <!-- Main Header-->
@@ -55,7 +55,7 @@
                 <div class="main-box clearfix">
                     <!--Logo-->
                     <div class="logo-box">
-                         <div class="logo"><a href="index.html" title="Driving School HTML Template"><img src="images/blue_logo.png" alt="" title="Driving School HTML Template"></a></div>
+                         <div class="logo"><a href="index.php" title="Driving School HTML Template"><img src="images/blue_logo.png" alt="" title="Driving School HTML Template"></a></div>
                     </div>
 
                     <div class="nav-box clearfix">
@@ -77,8 +77,8 @@
                                             </li>
                                         </ul> -->
                                     </li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Services</a></li>
+                                    <li><a href="about.php">About Us</a></li>
+                                    <li><a href="services.php">Services</a></li>
                                     <!-- <li class="dropdown"><a href="#">Programs</a>
                                         <ul>
                                             <li><a href="#">Highway Driving training</a></li>
@@ -88,7 +88,7 @@
                                             <li><a href="#">Highway Driving Lesson</a></li>
                                         </ul>
                                     </li> -->
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="contact.php">Contact Us</a></li>
                                 </ul>
                             </nav>
                             <!-- Main Menu End-->
