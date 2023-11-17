@@ -61,7 +61,7 @@
                         <div class="cont-us">
                             <li><i class="icon fa fa-phone"></i><a href="tel:<?php echo get_field('phone_number', 49); ?>"><?php echo get_field('phone_number', 49); ?></a></li>
                             <li><i class="icon fa fa-envelope"></i><a href="mailto:<?php echo get_field('email', 49); ?>"><?php echo get_field('email', 49); ?></a></li>
-                            <li><a href="#" class="bntbtn">Book Now</a></li>
+                            <li><a href="<?php echo get_site_url(); ?>/book-now/" class="bntbtn">Book Now</a></li>
                         </div>
                     </div>
                 </div>
@@ -216,7 +216,8 @@
             
             <!--Appointment Form-->
             <div class="appointment-form">
-                <form method="post" action="https://t.commonsupport.com/driveto/#">
+                <?php echo do_shortcode('[contact-form-7 id="9276adc" title="Home Page Form"]'); ?>
+                <!-- <form method="post" action="https://t.commonsupport.com/driveto/#">
                     <div class="form-group">
                         <input type="text" name="text" value="" placeholder="Name" required>
                     </div>
@@ -232,7 +233,7 @@
                     <div class="form-group">
                         <button type="submit" class="theme-btn btn-style-one">Send Message</button>
                     </div>
-                </form>
+                </form> -->
             </div>
             
             <!--Contact Info Box-->

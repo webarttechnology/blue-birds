@@ -152,18 +152,22 @@ get_header();
 
                      	<?php 
 
-                     	$servicesec = CFS()->get('service_section_loop');
+                        $serviceloop = CFS()->get('our_service_loop',13);
 
-                     	if(is_array($servicesec) || is_object($servicesec)){
-                     		foreach($servicesec as $servicesecitem) {
-                     	 ?>
+                        if(is_array($serviceloop) || is_object($serviceloop)){
+
+                            foreach($serviceloop as $serviceloopitem){
+
+
+
+                         ?>
 
                          <!--Block-->
                          <div class="wel-block col-md-4">
                              <div class="inner-box">
-                                 <div class="icon"><img src="<?php echo $servicesecitem['service_icon_image']; ?>" alt=""></div>
-                                 <h4><?php echo $servicesecitem['service_title']; ?></h4>
-                                 <div class="text"><?php echo $servicesecitem['service_description']; ?></div>
+                                 <div class="icon"><img src="<?php echo $serviceloopitem['our_service_icon_image']; ?>" alt=""></div>
+                                 <h4><?php echo $serviceloopitem['our_service_icon_title']; ?></h4>
+                                 <div class="text"><?php echo $serviceloopitem['our_service_icon_description']; ?></div>
                              </div>
                          </div>
                      <?php } } ?>

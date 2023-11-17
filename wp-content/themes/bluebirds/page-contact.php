@@ -62,7 +62,8 @@ get_header();
                 <h2><span>Get in Touch</span></h2>
             </div>
             <div class="form-box contact-form">
-                <form method="post" action="https://t.commonsupport.com/driveto/sendemail.php" id="contact-form">
+                <?php echo do_shortcode('[contact-form-7 id="2276c02" title="Contact Page Form"]'); ?>
+                <!-- <form method="post" action="https://t.commonsupport.com/driveto/sendemail.php" id="contact-form">
                     <div class="row clearfix">
                         <div class="form-group col-lg-6 col-md-6 col-sm-12">
                             <div class="field-inner">
@@ -90,7 +91,7 @@ get_header();
                             </div>
                         </div>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
     </section>
