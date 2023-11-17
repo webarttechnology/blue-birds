@@ -720,29 +720,45 @@ get_header();
      <div class="auto-container">
          <div class="title-box">
              <div class="dots"><span></span></div>
-             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span>Latest
-                     Resources</span></h2>
+             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span><?php echo get_field('resources_main_heading'); ?></span></h2>
          </div>
          <div class="carousel-box">
              <div class="programs-carousel program-block-two owl-theme owl-carousel">
                  <!--Block-->
+
+                  <?php
+      $args = array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        'orderby' => 'id',
+        'order' => 'ASC',
+      );
+
+      $loop = new WP_Query($args);
+while ($loop->have_posts()) : $loop->the_post();
+        $image = wp_get_attachment_url(get_post_thumbnail_id($post->ID) );
+        $content = get_the_content();
+        $strpcnt = wp_strip_all_tags($content);
+      ?>
                  <div class="program-block">
                      <div class="inner-box">
                          <div class="image-box">
-                             <div class="image"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/image-11.jpg" alt="" title=""></a>
+                             <div class="image"><a href="#"><img src="<?php echo $image; ?>" alt="" title=""></a>
                              </div>
                              <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
                          </div>
                          <div class="mid-box">
-                             <h4><a href="#">Alberta Road Test Booking</a></h4>
-                             <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                 tempor.</div>
+                             <h4><a href="#"><?php the_title(); ?></a></h4>
+                             <div class="text"><?php echo substr($strpcnt,0,70); ?></div>
                          </div>
                          <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
                      </div>
                  </div>
+                 <?php endwhile;
+            wp_reset_postdata(); ?>
                  <!--Block-->
-                 <div class="program-block">
+                 <!-- <div class="program-block">
                      <div class="inner-box">
                          <div class="image-box">
                              <div class="image"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/alberta_drivers- guide-min.png" alt=""
@@ -754,10 +770,10 @@ get_header();
                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                  tempor.</div>
                          </div>
-                         <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
+                        
                      </div>
                  </div>
-                 <!--Block-->
+                 
                  <div class="program-block">
                      <div class="inner-box">
                          <div class="image-box">
@@ -770,10 +786,10 @@ get_header();
                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                  tempor.</div>
                          </div>
-                         <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
+                         
                      </div>
                  </div>
-                 <!--Block-->
+               
                  <div class="program-block">
                      <div class="inner-box">
                          <div class="image-box">
@@ -786,7 +802,7 @@ get_header();
                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                  tempor.</div>
                          </div>
-                         <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
+                         
                      </div>
                  </div>
                  <div class="program-block">
@@ -801,9 +817,9 @@ get_header();
                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                  tempor.</div>
                          </div>
-                         <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
+                         
                      </div>
-                 </div>
+                 </div> -->
              </div>
          </div>
      </div>

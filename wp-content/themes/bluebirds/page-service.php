@@ -215,8 +215,10 @@ get_header();
         <div class="row clearfix">
             <div class="col-md-7" data-aos="fade-up" data-aos-duration="3000">
                 <div class="packege-text">
-                    <h3>All-In-One Training Package (Class 5): 10 Hours</h3>
-                    <p>Elevate your driving skills with our best-in-class lessons!
+                    <h3><?php echo get_field('service_page_second_section_heading'); ?></h3>
+
+                    <?php echo get_field('service_page_second_section_description'); ?>
+                   <!--  <p>Elevate your driving skills with our best-in-class lessons!
                         Our All-In-One Training Package offers top-notch on-road training
                         and expert theory sessions, ensuring you excel. Plus, enjoy reduced
                         insurance costs as a result. Don't just learn to drive, learn to drive
@@ -227,13 +229,13 @@ get_header();
                             includes<span class="orange"> 10 hours </span>of practical on-road training</p>
                         <p><span><i class="bi bi-check-all"></i></span>&nbsp;substituted by <span class="orange"> 15
                                 hours</span> of in-class or online training for insurance reduction</p>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
             <div class="col-md-5">
                 <div class="packege-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/resource/course-image-2.jpg">
+                    <img src="<?php echo get_field('service_page_second_section_image'); ?>">
                 </div>
             </div>
 
@@ -248,28 +250,41 @@ get_header();
             <div class="col-md-12">
                 <div class="brushup">
                     <div class="brushup-packege">
-                        <h3>Brush-Up Packages:</h3>
-                        <p>Boost your confidence on the road with our Brush-Up Driving Course. Tailored lessons to
-                            refresh skills
-                            and increase your chances of passing. Drive with assurance!</p>
+                        <h3><?php echo get_field('brushup_package_main_heading'); ?></h3>
+                        <p><?php echo get_field('brushup_package_main_subheading'); ?></p>
                     </div>
 
                     <div class="row">
 
+                        <?php 
+
+                        $brushuppackge = CFS()->get('brushup_package_loop');
+
+                        if(is_array($brushuppackge) || is_object($brushuppackge)){
+
+                            foreach($brushuppackge as $brushuppackgeitem){
+
+                         ?>
+
                         <div class="packege-box col-md-6 py-2" data-aos="fade-up">
                             <div class="packegebox-inner">
-                                <div class="packege-number">$125</div>
+                                <div class="packege-number"><?php echo $brushuppackgeitem['brushup_package_price']; ?></div>
                                 <div class="packege-text">
-                                    <h4>1.5 Hours</h4>
-                                    <p><span><i class="bi bi-check2-circle"></i></span>&nbsp;1.5 Hours of hands-on
+                                    <h4><?php echo $brushuppackgeitem['brushup_package_time']; ?></h4>
+
+                                    <?php echo $brushuppackgeitem['brushup_package_lesson_details']; ?>
+                                    <!-- <p><span><i class="bi bi-check2-circle"></i></span>&nbsp;1.5 Hours of hands-on
                                         practical lessons</p>
                                     <p><span><i class="bi bi-check2-circle"></i></span>&nbsp;Free Pick Up / Drop Off
-                                        Service*</p>
+                                        Service*</p> -->
                                 </div>
                             </div>
                         </div>
 
-                        <div class="packege-box col-md-6 py-2" data-aos="fade-down">
+
+                    <?php } } ?>
+
+                        <!-- <div class="packege-box col-md-6 py-2" data-aos="fade-down">
                             <div class="packegebox-inner">
                                 <div class="packege-number">$240</div>
                                 <div class="packege-text">
@@ -306,7 +321,7 @@ get_header();
                                         Service*</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
@@ -315,6 +330,14 @@ get_header();
 </section>
 
 <!-- car rental -->
+
+<?php 
+
+$carrental = get_field('extra_other_category_service_group');
+
+if($carrental){
+
+ ?>
 <section class="packege-rent">
     <div class="container">
         <div class="packege-pickup">
@@ -322,23 +345,20 @@ get_header();
 
                 <div class="col-md-6">
                     <div class="rent">
-                        <h3>Car Rental: $85</h3>
-                        <p>Car Rental is also available for students who wish to give the road test but do not have
-                            access
-                            to a car (Quoted price excludes GST)</p>
+                        <h3><?php echo $carrental['extra_category_1st_heading']; ?></h3>
+                        <p><?php echo $carrental['extra_category_1st_description']; ?></p>
                     </div>
                 </div>
                 <div class="col-md-6 pick-part">
-                    <h3>Free Pick Up & Drop Off Location:</h3>
-                    <p>Free Pick Up / Drop Off service is available only at <span class="head">Lions Park C-Train LRT
-                            Station.</span> An
-                        alternate pick-up/drop-off location can be arranged at the sole discreation of the
-                        instructor.</p>
+                    <h3><?php echo $carrental['extra_category_2nd_heading']; ?></h3>
+                    <p><?php echo $carrental['extra_category_2nd_description']; ?></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<?php } ?>
 
 <!-- map -->
 
@@ -355,29 +375,47 @@ get_header();
     <div class="auto-container">
         <div class="title-box">
             <div class="dots"><span></span></div>
-            <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span> Latest Resources
+            <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span> <?php echo get_field('resources_main_heading',5); ?>
                 </span></h2>
         </div>
         <div class="carousel-box">
             <div class="programs-carousel program-block-two owl-theme owl-carousel">
                 <!--Block-->
+
+                <?php
+      $args = array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        'orderby' => 'id',
+        'order' => 'ASC',
+      );
+
+      $loop = new WP_Query($args);
+while ($loop->have_posts()) : $loop->the_post();
+        $image = wp_get_attachment_url(get_post_thumbnail_id($post->ID) );
+        $content = get_the_content();
+        $strpcnt = wp_strip_all_tags($content);
+      ?>
+
                 <div class="program-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <div class="image"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/image-11.jpg" alt="" title=""></a>
+                            <div class="image"><a href="#"><img src="<?php echo $image; ?>" alt="" title=""></a>
                             </div>
                             <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
                         </div>
                         <div class="mid-box">
-                            <h4><a href="#">Alberta Road Test Booking</a></h4>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor.</div>
+                            <h4><a href="#"><?php the_title(); ?></a></h4>
+                            <div class="text"><?php echo substr($strpcnt,0,70); ?></div>
                         </div>
                         <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
                     </div>
                 </div>
+            <?php endwhile;
+            wp_reset_postdata(); ?>
                 <!--Block-->
-                <div class="program-block">
+                <!-- <div class="program-block">
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/alberta_drivers- guide-min.png"></a></div>
@@ -391,7 +429,7 @@ get_header();
                         <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
                     </div>
                 </div>
-                <!--Block-->
+                
                 <div class="program-block">
                     <div class="inner-box">
                         <div class="image-box">
@@ -406,7 +444,7 @@ get_header();
                         <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
                     </div>
                 </div>
-                <!--Block-->
+                
                 <div class="program-block">
                     <div class="inner-box">
                         <div class="image-box">
@@ -434,7 +472,7 @@ get_header();
                         </div>
                         <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -449,9 +487,8 @@ get_header();
         <div class="row clearfix">
             <div class="title-col col-md-12">
                 <div class="inner">
-                    <h2 class="text-center">Schedule your lessons today!</h2>
-                    <div class="link text-center mt-4"><a href="#" class="theme-btn btn-style-one"><span>DISCOVER
-                                MORE</span></a></div>
+                    <h2 class="text-center"><?php echo get_field('home_page_last_orange_section_title',5); ?></h2>
+                    <div class="link text-center mt-4"><a href="<?php echo get_field('home_page_last_orange_section_button_link',5); ?>" class="theme-btn btn-style-one"><span><?php echo get_field('home_page_last_orange_section_button_text',5); ?></span></a></div>
                 </div>
             </div>
         </div>
