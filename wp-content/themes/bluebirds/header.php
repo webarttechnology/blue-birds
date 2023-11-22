@@ -61,7 +61,7 @@
                         <div class="cont-us">
                             <li><i class="icon fa fa-phone"></i><a href="tel:<?php echo get_field('phone_number', 49); ?>"><?php echo get_field('phone_number', 49); ?></a></li>
                             <li><i class="icon fa fa-envelope"></i><a href="mailto:<?php echo get_field('email', 49); ?>"><?php echo get_field('email', 49); ?></a></li>
-                            <li><a href="<?php echo get_site_url(); ?>/book-now/" class="bntbtn">Book Now</a></li>
+<!--                             <li><a href="<?php echo get_site_url(); ?>/book-now/" class="bntbtn">Book Now</a></li> -->
                         </div>
                     </div>
                 </div>
@@ -92,8 +92,9 @@
                             </nav>
                             
                         </div>
+						
                        
-
+                       
                         <div class="links-box clearfix">
                             <!-- <div class="link search-btn search-toggle"><span class="icon far fa-search"></span></div> -->
                             <!-- Hidden Nav Toggler -->
@@ -104,7 +105,7 @@
 
                         <!-- Hidden Nav Toggler -->
                         <div class="nav-toggler">
-                            <button class="hidden-bar-opener"><span class="icon"><img src="images/icons/menu-icon.png" alt=""></span></button>
+                            <button class="hidden-bar-opener"><span class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/menu-icon.png" alt=""></span></button>
                         </div>
 
                     </div>
@@ -145,11 +146,12 @@
         <div class="hidden-bar-wrapper">
             <div class="hidden-bar-closer"><span class="icon"><svg class="icon-close" role="presentation" viewBox="0 0 16 14"><path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path></svg></span></div>
             <div class="nav-logo-box">
-                <div class="logo"><a href="index.html" title="Driving School HTML Template"><img src="images/logo-2.svg" alt="" title="Driving School HTML Template"></a></div>
+                <div class="logo"><a href="<?php echo get_site_url(); ?>" title="Driving School HTML Template"><img src="<?php echo get_field('logo', 49); ?>" alt="" title="Driving School HTML Template"></a></div>
             </div>
-            <!-- .Side-menu -->
+           <!-- .Side-menu -->
             <div class="side-menu">
-                 <ul class="navigation clearfix">
+                <?php wp_nav_menu( array('menu' => 'Header Menu', 'container' => '', 'items_wrap' => '<ul class="navigation clearfix">%3$s</ul>' )); ?>
+                 <!-- <ul class="navigation clearfix">
                     <li class="current dropdown"><a href="index.html">Home</a>
                         <ul>
                             <li><a href="index.html">Home 01</a></li>
@@ -189,15 +191,15 @@
                         </ul>
                     </li>
                     <li><a href="#">Contact</a></li>
-                </ul>
+                </ul> -->
             </div><!-- /.Side-menu -->
             
-            <div class="links-box clearfix">
+<!--             <div class="links-box clearfix">
                 <div class="clearfix">
                     <div class="link"><a href="#" class="theme-btn btn-style-one"><span>About Us</span></a></div>
                     <div class="link"><a href="#" class="theme-btn btn-style-two"><span>Contact Us</span></a></div>
                 </div>
-            </div>
+            </div> -->
         
         </div><!-- / Hidden Bar Wrapper -->
     </section>

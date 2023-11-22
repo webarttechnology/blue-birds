@@ -216,9 +216,8 @@ get_header();
             <div class="col-md-7" data-aos="fade-up" data-aos-duration="3000">
                 <div class="packege-text">
                     <h3><?php echo get_field('service_page_second_section_heading'); ?></h3>
-
-                    <?php echo get_field('service_page_second_section_description'); ?>
-                   <!--  <p>Elevate your driving skills with our best-in-class lessons!
+					<?php echo get_field('service_page_second_section_description'); ?>
+<!--                     <p>Elevate your driving skills with our best-in-class lessons!
                         Our All-In-One Training Package offers top-notch on-road training
                         and expert theory sessions, ensuring you excel. Plus, enjoy reduced
                         insurance costs as a result. Don't just learn to drive, learn to drive
@@ -255,8 +254,8 @@ get_header();
                     </div>
 
                     <div class="row">
-
-                        <?php 
+						
+						<?php 
 
                         $brushuppackge = CFS()->get('brushup_package_loop');
 
@@ -271,20 +270,20 @@ get_header();
                                 <div class="packege-number"><?php echo $brushuppackgeitem['brushup_package_price']; ?></div>
                                 <div class="packege-text">
                                     <h4><?php echo $brushuppackgeitem['brushup_package_time']; ?></h4>
-
-                                    <?php echo $brushuppackgeitem['brushup_package_lesson_details']; ?>
-                                    <!-- <p><span><i class="bi bi-check2-circle"></i></span>&nbsp;1.5 Hours of hands-on
+									
+									<?php echo $brushuppackgeitem['brushup_package_lesson_details']; ?>
+<!--                                     <p><span><i class="bi bi-check2-circle"></i></span>&nbsp;1.5 Hours of hands-on
                                         practical lessons</p>
                                     <p><span><i class="bi bi-check2-circle"></i></span>&nbsp;Free Pick Up / Drop Off
                                         Service*</p> -->
                                 </div>
                             </div>
                         </div>
+						
+						  <?php } } ?>
 
 
-                    <?php } } ?>
-
-                        <!-- <div class="packege-box col-md-6 py-2" data-aos="fade-down">
+<!--                         <div class="packege-box col-md-6 py-2" data-aos="fade-down">
                             <div class="packegebox-inner">
                                 <div class="packege-number">$240</div>
                                 <div class="packege-text">
@@ -330,8 +329,8 @@ get_header();
 </section>
 
 <!-- car rental -->
-
-<?php 
+	
+	<?php 
 
 $carrental = get_field('extra_other_category_service_group');
 
@@ -357,8 +356,8 @@ if($carrental){
         </div>
     </div>
 </section>
-
-<?php } ?>
+	
+	<?php } ?>
 
 <!-- map -->
 
@@ -380,9 +379,8 @@ if($carrental){
         </div>
         <div class="carousel-box">
             <div class="programs-carousel program-block-two owl-theme owl-carousel">
-                <!--Block-->
-
-                <?php
+				
+				<?php
       $args = array(
         'post_type' => 'post',
         'post_status' => 'publish',
@@ -397,25 +395,25 @@ while ($loop->have_posts()) : $loop->the_post();
         $content = get_the_content();
         $strpcnt = wp_strip_all_tags($content);
       ?>
-
+                <!--Block-->
                 <div class="program-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <div class="image"><a href="#"><img src="<?php echo $image; ?>" alt="" title=""></a>
+                            <div class="image"><a href="<?php the_permalink(); ?>"><img src="<?php echo $image; ?>" alt="" title=""></a>
                             </div>
                             <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
                         </div>
                         <div class="mid-box">
-                            <h4><a href="#"><?php the_title(); ?></a></h4>
+                            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                             <div class="text"><?php echo substr($strpcnt,0,70); ?></div>
                         </div>
-                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                        <div class="link-box"><a href="<?php the_permalink(); ?>">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
                     </div>
                 </div>
-            <?php endwhile;
+				<?php endwhile;
             wp_reset_postdata(); ?>
                 <!--Block-->
-                <!-- <div class="program-block">
+<!--                 <div class="program-block">
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/alberta_drivers- guide-min.png"></a></div>
@@ -429,7 +427,7 @@ while ($loop->have_posts()) : $loop->the_post();
                         <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
                     </div>
                 </div>
-                
+              
                 <div class="program-block">
                     <div class="inner-box">
                         <div class="image-box">
@@ -444,7 +442,7 @@ while ($loop->have_posts()) : $loop->the_post();
                         <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
                     </div>
                 </div>
-                
+               
                 <div class="program-block">
                     <div class="inner-box">
                         <div class="image-box">

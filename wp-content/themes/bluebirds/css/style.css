@@ -2614,16 +2614,23 @@ body.visible-sidebar{
   position: relative;
   display: block;
   text-align: center;
+	z-index:0;
 }
 
 .cta-one .inner .content{
   position: relative;
   padding: 35px 0;
-  line-height: 50px;
-  display: inline-block;
+/* 	 padding-right: 90px; */
+/*   line-height: 50px;
+  display: flex;
   padding-right: 90px;
+	justify-content: space-between;
+    align-items: baseline;
+ */
 }
-
+.cta-one .inner .dstvbtn {
+    width: 214px;
+}
 .cta-one .inner .content:after{
   content: '';
   position: absolute;
@@ -7769,3 +7776,33 @@ body.visible-sidebar{
 .card4:hover .go-arrow {
   opacity: 1;
 }
+
+
+.program-block .image-box .blog_Img {
+    width: 100%; 
+    height: 400px;
+    object-fit: cover;
+}
+.how-image{
+	padding-right:25px;
+}
+.how-image img{
+	width:100% !important;
+}
+.main-menu .navigation > li#menu-item-178 a {
+    background: #ff8f1f;
+    padding: 10px 20px;
+    color:#fff;
+    font-weight: 600;
+    border-radius: 5px;
+	    margin-top: 10px;
+}
+.heading h4{
+	color:#fff;
+	margin:0;
+	font-size: 20px;
+}
+
+
+
+

@@ -8,7 +8,7 @@ get_header();
  <!-- Banner Section -->
  <section class="banner-section bannercntpb">
      <div class="bg-video-wrap">
-         <video src="<?php echo get_field('banner_video'); ?>" loop="" muted="" autoplay="">
+         <video src="<?php echo get_field('banner_video'); ?>" loop="" muted="" autoplay="" controls="false">
          </video>
          <div class="overlay"></div>
 
@@ -123,9 +123,17 @@ get_header();
      <div class="auto-container">
          <div class="inner">
              <div class="content">
-                 <div class="text">Schedule Your Driving Lessons Today</div>
-                 <div class="phone"><a href="tel:<?php echo get_field('phone_number', 49); ?>"><i class="icon far fa-phone"></i><span>
+				 <div class="row align-items-center content1">
+					 <div class="text col-md-4 heading"><h4>
+						 <?php the_field('under_banner_title'); ?>
+						 </h4></div>
+				   <div class="btnprty lesson  col-md-3 ">
+                     <a href="<?php the_field('under_banner_button_link'); ?>" class="dstvbtn"><?php the_field('under_banner_button_text'); ?></a>
+                 </div>
+                 <div class="phone col-md-4 text-right"><a href="tel:<?php echo get_field('phone_number', 49); ?>"><i class="icon far fa-phone"></i><span>
                              <?php echo get_field('phone_number', 49); ?></span></a></div>
+				 </div>
+                 
              </div>
          </div>
      </div>
@@ -724,9 +732,9 @@ get_header();
          </div>
          <div class="carousel-box">
              <div class="programs-carousel program-block-two owl-theme owl-carousel">
-                 <!--Block-->
-
-                  <?php
+                 
+				 
+				 <?php
       $args = array(
         'post_type' => 'post',
         'post_status' => 'publish',
@@ -744,21 +752,21 @@ while ($loop->have_posts()) : $loop->the_post();
                  <div class="program-block">
                      <div class="inner-box">
                          <div class="image-box">
-                             <div class="image"><a href="#"><img src="<?php echo $image; ?>" alt="" title=""></a>
+                             <div class="image"><a href="<?php the_permalink(); ?>"><img src="<?php echo $image; ?>" alt="" title=""></a>
                              </div>
                              <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
                          </div>
                          <div class="mid-box">
-                             <h4><a href="#"><?php the_title(); ?></a></h4>
+                             <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                              <div class="text"><?php echo substr($strpcnt,0,70); ?></div>
                          </div>
                          <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
                      </div>
                  </div>
-                 <?php endwhile;
+				    <?php endwhile;
             wp_reset_postdata(); ?>
                  <!--Block-->
-                 <!-- <div class="program-block">
+<!--                  <div class="program-block">
                      <div class="inner-box">
                          <div class="image-box">
                              <div class="image"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/alberta_drivers- guide-min.png" alt=""
@@ -817,7 +825,7 @@ while ($loop->have_posts()) : $loop->the_post();
                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                  tempor.</div>
                          </div>
-                         
+                        
                      </div>
                  </div> -->
              </div>

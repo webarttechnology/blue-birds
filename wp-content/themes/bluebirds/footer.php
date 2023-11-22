@@ -74,11 +74,13 @@
                             <div class="footer-column ">
                                 <h6>Services</h6>
                                 <div class="links">
-                                    <ul>
+									<?php wp_nav_menu( array('menu' => 'Other Footer Menu', 'container' => '', 'items_wrap' => '<ul class="">%3$s</ul>' )); ?>
+<!--                                     <ul>
                                         <li><a href="#">All-In-One Training Package</a></li>
                                         <li><a href="#">Brush-Up Packages</a></li>
                                         <li><a href="#">Car Rental</a></li>
                                         <li><a href="#">Free Pick Up & Drop Off Location</a></li>
+									</ul> -->
                                 </div>
                             </div>
                         </div>    
@@ -91,7 +93,8 @@
         <div class="f-bottom">
             <div class="auto-container">
                 <div class="inner clearfix">
-                    <div class="copyright">Copyrights &copy; <?php echo date('Y'); ?> Blue Bird. <a href="#">Privacy Policy</a>  /  <a href="#">Booking Guide</a></div>
+<!--                     <div class="copyright">Copyrights &copy; <?php //echo date('Y'); ?> Blue Bird. <a href="#">Privacy Policy</a>  /  <a href="#">Booking Guide</a></div> -->
+					<div class="copyright">Copyrights &copy; <?php echo date('Y'); ?> Blue Bird.</div>
                     <div class="social-links d-none">
                         <ul class="clearfix">
                             <li><a href="https://www.facebook.com/p/Blue-Bird-Driving-School-Calgary-100063759630061" target="_blank"><i class="fab fa-facebook-f"></i></a></li>

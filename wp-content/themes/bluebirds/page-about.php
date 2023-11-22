@@ -154,14 +154,14 @@
 
 <!-- how-work -->
 
-<section class="how-work p-5">
-   <div class="auto-container">
+<section class="how-work py-4">
+   <div class="container">
       <div class="row">
          <div class="col-md-12">
             <div class="hw-work">
                <h1 class="text-center"><?php echo get_field('how_it_works_main_heading'); ?></h1>
                <p class="text-center"><?php echo get_field('how_it_works_main_subheading'); ?></p>
-               <div class="how-image pt-5"><img src="<?php echo get_field('how_it_works_image'); ?>"></div>
+               <div class="how-image"><img src="<?php echo get_field('how_it_works_image'); ?>"></div>
 
             </div>
          </div>
@@ -207,8 +207,8 @@
 
 
                         <div class="row">
-                            
-                             <?php 
+							
+							 <?php 
                               $ourfeature = CFS()->get('our_best_feature_block');
                               
                               if(is_array($ourfeature) || is_object($ourfeature)){
@@ -230,8 +230,8 @@
                                  </div>
                               </div>
                            </div>
-                        
-                            <?php } } ?>
+						
+							<?php } } ?>
 
 <!--                            <div class="col-lg-6 col-md-6 col-sm-12 single-column">
                               <div class="why-info-block">
