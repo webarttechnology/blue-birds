@@ -56,7 +56,7 @@
                      </div>
                   </div>
                </div>
-               <div class="lower-links clearfix">
+               <div class="lower-links clearfix d-none">
                   <div class="link"><a href="<?php echo get_field('about_button_link'); ?>" class="theme-btn btn-style-one semi-round"><span><?php echo get_field('about_button_text'); ?></span></a></div>
                </div>
             </div>
@@ -154,7 +154,7 @@
 
 <!-- how-work -->
 
-<section class="how-work py-4">
+<section class="how-work">
    <div class="container">
       <div class="row">
          <div class="col-md-12">
@@ -217,7 +217,7 @@
                               
                                ?>
 
-                           <div class="col-lg-6 col-md-6 col-sm-12 single-column">
+                           <div class="col-lg-3 col-md-3 col-sm-12 single-column">
                               <div class="why-info-block">
                               <div class="card">
                            <a class="card1" href="#">
@@ -328,7 +328,7 @@
                 </div> --> 
 
          <div class="col-md-12">
-            <div class="btnprty">
+            <div class="btnprty now-button">
                <a href="<?php echo get_field('best_feature_section_button_link'); ?>" class="dstvbtn"><?php echo get_field('best_feature_section_button'); ?></a>
             </div>
          </div>

@@ -20,7 +20,7 @@ get_header();
 </section>
 
 <!--Welcome Section-->
-<section class="welcome-section">
+<section class="welcome-section d-none">
     <div class="bg-left"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-big.svg" alt=""></i></div>
     <div class="bg-right" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/background/wheel-image-1.png);"></div>
     <div class="auto-container">
@@ -358,19 +358,8 @@ if($carrental){
 </section>
 	
 	<?php } ?>
-
-<!-- map -->
-
-<section class="packege-map">
-    <div class="map" data-aos="zoom-in">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.83997306206!2d-114.10434730164826!3d51.06660847569058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f964625057f%3A0xc5aa81ec86f68d05!2sLions%20Park!5e0!3m2!1sen!2sca!4v1697672780512!5m2!1sen!2sca"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</section>
-
-<section class="programs-section mt-5">
+	
+	<section class="programs-section mt-5 d-none">
     <div class="auto-container">
         <div class="title-box">
             <div class="dots"><span></span></div>
@@ -408,6 +397,229 @@ while ($loop->have_posts()) : $loop->the_post();
                             <div class="text"><?php echo substr($strpcnt,0,70); ?></div>
                         </div>
                         <div class="link-box"><a href="<?php the_permalink(); ?>">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                    </div>
+                </div>
+				<?php endwhile;
+            wp_reset_postdata(); ?>
+                <!--Block-->
+<!--                 <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <div class="image"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/alberta_drivers- guide-min.png"></a></div>
+                            <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
+                        </div>
+                        <div class="mid-box">
+                            <h4><a href="#">Alberta Drivers Guide (2023)</a></h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor.</div>
+                        </div>
+                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                    </div>
+                </div>
+              
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <div class="image"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/image-13.jpg"></a></div>
+                            <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
+                        </div>
+                        <div class="mid-box">
+                            <h4><a href="#">Class 7 Practice Test</a></h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor.</div>
+                        </div>
+                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                    </div>
+                </div>
+               
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <div class="image"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/alberta_transportation-min.jpg"></a></div>
+                            <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
+                        </div>
+                        <div class="mid-box">
+                            <h4><a href="#">Alberta Transportation</a></h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor.</div>
+                        </div>
+                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                    </div>
+                </div>
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <div class="image"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/traffic_ safety programs-min.jpg"></a></div>
+                            <div class="icon-box"><img src="images/resource/steering-icon.svg" alt="" title=""></div>
+                        </div>
+                        <div class="mid-box">
+                            <h4><a href="#">Traffic Safety Programs</a></h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor.</div>
+                        </div>
+                        <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+	
+	
+	
+	
+	
+
+<!-- map -->
+
+<section class="packege-map">
+    <div class="map" data-aos="zoom-in">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.83997306206!2d-114.10434730164826!3d51.06660847569058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f964625057f%3A0xc5aa81ec86f68d05!2sLions%20Park!5e0!3m2!1sen!2sca!4v1697672780512!5m2!1sen!2sca"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+	
+	
+	
+	<section class="welcome-section">
+    <div class="bg-left"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-big.svg" alt=""></i></div>
+    <div class="bg-right" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/background/wheel-image-1.png);"></div>
+    <div class="auto-container">
+        <div class="row clearfix">
+            <!--Text Col-->
+            <div class="text-col col-md-12">
+                <div class="inner wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms">
+                    <div class="title-box">
+                        <div class="dots"><span></span></div>
+                        <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg"
+                                    alt=""></i><span><?php echo get_field('banner_bottom_main_heading',5); ?> </span></h2>
+                    </div>
+                    <div class="text-content text"><?php echo get_field('banner_bottom_subheading',5); ?></div>
+                    <div class="row clearfix">
+                        <!--Block-->
+
+                        <?php 
+
+                        $serviceloop = CFS()->get('our_service_loop');
+
+                        if(is_array($serviceloop) || is_object($serviceloop)){
+
+                            foreach($serviceloop as $serviceloopitem){
+
+
+
+                         ?>
+                        <div class="wel-block col-md-4">
+                            <div class="inner-box">
+                                <div class="icon"><img src="<?php echo $serviceloopitem['our_service_icon_image']; ?>" alt=""></div>
+                                <h4><?php echo $serviceloopitem['our_service_icon_title']; ?></h4>
+                                <div class="text"><?php echo $serviceloopitem['our_service_icon_description']; ?></div>
+                            </div>
+                        </div>
+                    <?php } } ?>
+                        <!--Block-->
+                        <!-- <div class="wel-block col-md-4">
+                            <div class="inner-box">
+                                <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/check-1.svg" alt=""></div>
+                                <h4>Car Rentals</h4>
+                                <div class="text">Car Rentals: Enjoy the convenience of hassle-free car rentals for your
+                                    driving lessons, ensuring a seamless learning experience.</div>
+                            </div>
+                        </div>
+                       
+                        <div class="wel-block col-md-4">
+                            <div class="inner-box">
+                                <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/check-1.svg" alt=""></div>
+                                <h4>Insurance Reduction Courses</h4>
+                                <div class="text">Enroll in our specialized courses to reduce
+                                    insurance premiums while enhancing your driving skills.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="wel-block col-md-4">
+                            <div class="inner-box">
+                                <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/check-1.svg" alt=""></div>
+                                <h4>Personalized Lessons</h4>
+                                <div class="text">Tailored lessons designed to meet your specific needs,
+                                    providing focused and effective learning.</div>
+                            </div>
+                        </div>
+                        <div class="wel-block col-md-4">
+                            <div class="inner-box">
+                                <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/check-1.svg" alt=""></div>
+                                <h4>Self Paced Learning</h4>
+                                <div class="text">Progress at your own speed with our flexible self-paced learning
+                                    options,
+                                    empowering you to learn comfortably.</div>
+                            </div>
+                        </div>
+                        <div class="wel-block col-md-4">
+                            <div class="inner-box">
+                                <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/check-1.svg" alt=""></div>
+                                <h4>Top-Rated School</h4>
+                                <div class="text">Choose the top-rated driving school in town, where quality education
+                                    and
+                                    excellent service are our top priorities.</div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- <div class="lower-links clearfix">
+                            <div class="link"><a href="#" class="theme-btn btn-style-one"><span>DISCOVER MORE</span></a></div>
+                            <div class="link">
+                                <div class="phone">
+                                    <span class="icon fa fa-phone"></span>
+                                    <a href="tel:0008887777" class="theme-btn">000 888 7777</a><br>
+                                    <span class="subtitle">Phone Line</span>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	
+
+<section class="programs-section my-5">
+    <div class="auto-container">
+        <div class="title-box">
+            <div class="dots"><span></span></div>
+            <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span> <?php echo get_field('resources_main_heading',5); ?>
+                </span></h2>
+        </div>
+        <div class="carousel-box">
+            <div class="programs-carousel program-block-two owl-theme owl-carousel">
+				
+				<?php
+      $args = array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        'orderby' => 'id',
+        'order' => 'ASC',
+      );
+
+      $loop = new WP_Query($args);
+while ($loop->have_posts()) : $loop->the_post();
+        $image = wp_get_attachment_url(get_post_thumbnail_id($post->ID) );
+        $content = get_the_content();
+        $strpcnt = wp_strip_all_tags($content);
+      ?>
+                <!--Block-->
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <div class="image"><a href="<?php echo get_field('resource_link'); ?>"><img src="<?php echo $image; ?>" alt="" title=""></a>
+                            </div>
+                            <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
+                        </div>
+                        <div class="mid-box">
+                            <h4><a href="<?php echo get_field('resource_link'); ?>"><?php the_title(); ?></a></h4>
+                            <div class="text"><?php //echo substr($strpcnt,0,70); ?></div>
+                        </div>
+<!--                         <div class="link-box"><a href="<?php //the_permalink(); ?>">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
                     </div>
                 </div>
 				<?php endwhile;

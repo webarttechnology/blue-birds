@@ -8,9 +8,9 @@ get_header();
  <!-- Banner Section -->
  <section class="banner-section bannercntpb">
      <div class="bg-video-wrap">
-         <video src="<?php echo get_field('banner_video'); ?>" loop="" muted="" autoplay="" controls="false">
+         <video src="<?php echo get_field('banner_video'); ?>" loop muted autoplay playsinline>
          </video>
-         <div class="overlay"></div>
+<!--          <div class="overlay"></div> -->
 
          <div class="text-animation">
 
@@ -440,11 +440,11 @@ get_header();
                  </div>
              </div>
          <?php } } ?>
-             <div class="col-md-12">
+<!--              <div class="col-md-12">
                  <div class="btnprty mt-5">
-                     <a href="<?php echo get_field('process_step_section_button_link'); ?>" class="dstvbtn"><?php echo get_field('process_step_section_button_text'); ?></a>
+                     <a href="<?php //echo get_field('process_step_section_button_link'); ?>" class="dstvbtn"><?php //echo get_field('process_step_section_button_text'); ?></a>
                  </div>
-             </div>
+             </div> -->
          </div>
      </div>
  </section>
@@ -752,13 +752,13 @@ while ($loop->have_posts()) : $loop->the_post();
                  <div class="program-block">
                      <div class="inner-box">
                          <div class="image-box">
-                             <div class="image"><a href="<?php the_permalink(); ?>"><img src="<?php echo $image; ?>" alt="" title=""></a>
+                             <div class="image"><a href="<?php echo get_field('resource_link'); ?>" target="_blank"><img src="<?php echo $image; ?>" alt="" title=""></a>
                              </div>
                              <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
                          </div>
                          <div class="mid-box">
-                             <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                             <div class="text"><?php echo substr($strpcnt,0,70); ?></div>
+                             <h4><a href="<?php echo get_field('resource_link'); ?>" target="_blank"><?php the_title(); ?></a></h4>
+                             <div class="text"><?php //echo substr($strpcnt,0,70); ?></div>
                          </div>
                          <!-- <div class="link-box"><a href="#">READ MORE <i class="fa-light fa-angle-right"></i></a></div> -->
                      </div>
@@ -842,7 +842,9 @@ while ($loop->have_posts()) : $loop->the_post();
              <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span>Check what people
                      say about.</span></h2>
          </div>
-         <div class="elfsight-app-115ef680-4585-4caf-bd6d-17bb29f08b39" data-elfsight-app-lazy></div>
+         <div class="elfsight-app-115ef680-4585-4caf-bd6d-17bb29f08b39" data-elfsight-app-lazy>
+		 	<?php echo do_shortcode('[trustindex no-registration=google]'); ?>
+		 </div>
      </div>
  </section>
 

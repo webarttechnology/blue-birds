@@ -15,7 +15,7 @@ get_header();
                   <li class="current">Driving Lesson</li>
                </ul>
             </div>
-            <h1>Driving Lesson</h1>
+            <h1>Driving Lesson Booking</h1>
          </div>
       </div>
    </section>

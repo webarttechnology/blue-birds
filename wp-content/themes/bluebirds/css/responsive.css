@@ -264,7 +264,7 @@
 	}
 
 	.inner-banner{
-		padding: 200px 0 100px;
+	padding: 150px 0 100px;
 	}
 
 	.not-found-section .big-text{
@@ -541,7 +541,12 @@
 
 
 @media only screen and (max-width: 991px){
-
+	.main-menu li #menu-item-178 a {
+		background:#FF8F1F;
+		color:#fff;
+		text-align:center;
+		font-weight:500;
+	}
 	.text-animation h1 {
 		font-size: 23px;
 		padding-top: 50px;
@@ -915,6 +920,24 @@
 	.sidebar-page-container{
 		padding: 70px 0 50px;
 	}
+	.card1 {
+    padding: 20px 20px;
+	}
+	.card {
+    width: 113%;
+}
+	.why-us-three .why-info-block {
+		width: 103%;
+	}
+	.why-us-three .why-info-block .icon-box {
+    
+		font-size: 40px;
+	}
+	
+	.why-us-three .why-info-block .count {
+		font-size: 12px;
+	}
+	
 }
 
 @media only screen and (max-width: 767px){
@@ -922,7 +945,16 @@
 		padding-top: 30px;
 		font-size: 16px;
 	}
-
+.why-us-three .why-info-block {
+    width: 86%;
+}
+	.why-us-three .why-info-block .count {
+    font-size: 21px;
+}
+	.why-us-three .why-info-block .icon-box {
+    font-size: 59px;
+		margin-bottom: 17px;
+}
 	.banner-section .owl-theme .owl-nav{
 		display: none;
 	}
@@ -930,6 +962,17 @@
 	.banner-section .slide-item .links-box{
 		padding-top: 40px;
 	}
+	..why-block h4 {
+		font-size: 31px;
+	}
+	.program-block h4 a {
+   
+    font-size: 22px;
+}
+	.program-block-two .text {
+  
+    font-size: 19px;
+}
 
 	.cta-one .inner .content .text{
 		margin-right: 0;
@@ -1001,8 +1044,10 @@
 	}
 
 	.why-block .inner-box{
-		padding: 50px 20px 40px;
-		text-align: center;
+/* 		padding: 50px 20px 40px; */
+		padding: 49px 0;
+    text-align: center;
+    font-size: 28px;
 	}
 
 	.why-block .icon-box{
@@ -1108,10 +1153,10 @@
     font-size: 33px;
     padding-top: 102px;
 }
-		.why-block .inner-box{
+/* 		.why-block .inner-box{
 			    padding: 10px 11px;
 			    font-size: 18px;
-		}
+		} */
 		.main-footer .about .address {
 			    font-size: 16px;
 		}
@@ -1301,8 +1346,11 @@
 
 	.why-us-three .why-info-block{
 		float: none;
-		margin: 0 auto 50px;
+		
 	}
+	.why-us-three .why-info-block {
+    width: 88%;
+}
 
 	.why-us-three .lower-links .text-link{
 		padding-top: 0;
@@ -1453,6 +1501,11 @@
 		height:auto;
 		display:flex;
 	}
+	.why-block .inner-box {
+       height: 295px;
+    padding: 31px 11px;
+    font-size: 19px;
+}
 }
 @media only screen and (max-width: 480px){
 	.heading h4 {
@@ -1484,6 +1537,12 @@
 	.heading h4 {
     font-size: 22px;
 }	
+		.why-block .inner-box {
+			height: 256px;
+		}
+		.lesson {
+    margin-bottom: 7px;
+}
 		
 }
 		
@@ -1511,6 +1570,10 @@
     margin-bottom: 9px;
 			font-size: 19px;
 }
+		.why-block .inner-box {
+   
+    padding: 16px 11px;
+		}
 }
 
 @media only screen and (max-width: 412px){
@@ -1523,6 +1586,9 @@
 	.lesson {
     margin-bottom: 10px;
 }
+	.why-block .inner-box {
+		padding: 22px 11px;
+	}
 }
 
 
@@ -1535,6 +1601,13 @@
 		.why-us-three .why-info-block .count {
 			font-size:20px;
 		}
+		.heading h4 {
+    font-size: 20px;
+}
+		.text {
+    
+    font-size: 15px;
+}
 }
 
 @media only screen and (max-width: 375px){
@@ -1593,6 +1666,12 @@
 	.rent{
 		border-right:none;
 	}
+	.heading h4 {
+    font-size: 19px;
+}
+	.lesson {
+    margin-bottom: 7px;
+}
 	
 }
 @media only screen and (max-width: 320px){
@@ -1611,6 +1690,9 @@
 }
 	.text-animation {
     top: 49%;
+}
+	.heading h4 {
+    font-size: 16px;
 }
 }
 	
