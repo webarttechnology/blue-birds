@@ -17,7 +17,13 @@ get_header();
              <h1>
              	<?php echo get_field('banner_heading'); ?>
                 </h1>
+			 
+			 <div class="banner-button">
+			 <a href="<?php echo get_field('banner_button_1_link'); ?>"><?php echo get_field('banner_button_1'); ?></a>
+			 <a href="<?php echo get_field('banner_button_2_link'); ?>"><?php echo get_field('banner_button_2'); ?></a>
+		 </div>
          </div>
+		 
 
          <div class="banner-container ">
              <div class="banner-slider owl-theme owl-carousel d-none">
@@ -31,7 +37,7 @@ get_header();
                                      <div class="inner">
                                          <div class="bg-image"><img src="<?php echo get_template_directory_uri(); ?>/images/main-slider/banner-icon-1.svg" alt=""
                                                  title=""></div>
-                                         <h1><span><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg"
+                                         <h1><span><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png"
                                                          alt=""></i>High-Quality Driving Schools for you.</span></h1>
                                          <div class="text">Driver's Education courses in Castro Valley, San Leandro,
                                              Lorenzo, Dublin, Pleasanton DanvilleSan Lorenzo, Dublin, Pleasanton,
@@ -61,7 +67,7 @@ get_header();
                                      <div class="inner">
                                          <div class="bg-image"><img src="<?php echo get_template_directory_uri(); ?>/images/main-slider/banner-icon-1.svg" alt=""
                                                  title=""></div>
-                                         <h1><span><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg"
+                                         <h1><span><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png"
                                                          alt=""></i>High-Quality Driving Schools for you.</span></h1>
                                          <div class="text">Driver's Education courses in Castro Valley, San Leandro,
                                              Lorenzo, Dublin, Pleasanton DanvilleSan Lorenzo, Dublin, Pleasanton,
@@ -91,7 +97,7 @@ get_header();
                                      <div class="inner">
                                          <div class="bg-image"><img src="<?php echo get_template_directory_uri(); ?>/images/main-slider/banner-icon-1.svg" alt=""
                                                  title=""></div>
-                                         <h1><span><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg"
+                                         <h1><span><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png"
                                                          alt=""></i>High-Quality Driving Schools for you.</span></h1>
                                          <div class="text">Driver's Education courses in Castro Valley, San Leandro,
                                              Lorenzo, Dublin, Pleasanton DanvilleSan Lorenzo, Dublin, Pleasanton,
@@ -152,7 +158,7 @@ get_header();
                  <div class="inner wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms">
                      <div class="title-box">
                          <div class="dots"><span></span></div>
-                         <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg"
+                         <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png"
                                      alt=""></i><span><?php echo get_field('banner_bottom_main_heading'); ?></span></h2>
                      </div>
                      <div class="text-content text"><?php echo get_field('banner_bottom_subheading'); ?></div>
@@ -215,7 +221,7 @@ get_header();
      <div class="auto-container">
          <div class="title-box centered">
              <div class="dots"><span></span></div>
-             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span>Check out latest
+             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png" alt=""></i><span>Check out latest
                      <br>Services</span></h2>
          </div>
          <div class="row clearfix">
@@ -324,7 +330,7 @@ get_header();
      <div class="auto-container">
          <div class="title-box">
              <div class="dots"><span></span></div>
-             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span>Why Choose
+             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png" alt=""></i><span>Why Choose
                      Us</span></h2>
          </div>
          <div class="carousel-box">
@@ -418,7 +424,7 @@ get_header();
      <div class="auto-container">
          <div class="title-box">
              <div class="dots"><span></span></div>
-             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span><?php echo get_field('step_process_main_heading'); ?></span></h2>
+             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png" alt=""></i><span><?php echo get_field('step_process_main_heading'); ?></span></h2>
          </div>
          <div class="row clearfix">
          	<?php 
@@ -455,7 +461,7 @@ get_header();
      <div class="auto-container">
          <div class="title-box centered">
              <div class="dots"><span></span></div>
-             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span>Meet Our Expert
+             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png" alt=""></i><span>Meet Our Expert
                      <br>Instructors</span></h2>
          </div>
          <div class="carousel-box">
@@ -585,7 +591,7 @@ get_header();
      <div class="auto-container">
          <div class="title-box">
              <div class="dots"><span></span></div>
-             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span>Latest
+             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png" alt=""></i><span>Latest
                      Resources</span></h2>
          </div>
          <div class="carousel-box">
@@ -728,7 +734,7 @@ get_header();
      <div class="auto-container">
          <div class="title-box">
              <div class="dots"><span></span></div>
-             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span><?php echo get_field('resources_main_heading'); ?></span></h2>
+             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png" alt=""></i><span><?php echo get_field('resources_main_heading'); ?></span></h2>
          </div>
          <div class="carousel-box">
              <div class="programs-carousel program-block-two owl-theme owl-carousel">
@@ -754,7 +760,7 @@ while ($loop->have_posts()) : $loop->the_post();
                          <div class="image-box">
                              <div class="image"><a href="<?php echo get_field('resource_link'); ?>" target="_blank"><img src="<?php echo $image; ?>" alt="" title=""></a>
                              </div>
-                             <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
+                             <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Steering.png" alt="" title=""></div>
                          </div>
                          <div class="mid-box">
                              <h4><a href="<?php echo get_field('resource_link'); ?>" target="_blank"><?php the_title(); ?></a></h4>
@@ -839,8 +845,7 @@ while ($loop->have_posts()) : $loop->the_post();
      <div class="container-fluid p-0">
          <div class="title-box centered">
              <div class="dots"><span></span></div>
-             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span>Check what people
-                     say about.</span></h2>
+             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png" alt=""></i><span>Testimonials</span></h2>
          </div>
          <div class="elfsight-app-115ef680-4585-4caf-bd6d-17bb29f08b39" data-elfsight-app-lazy>
 		 	<?php echo do_shortcode('[trustindex no-registration=google]'); ?>
@@ -853,7 +858,7 @@ while ($loop->have_posts()) : $loop->the_post();
      <div class="auto-container">
          <div class="title-box centered">
              <div class="dots"><span></span></div>
-             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span>Check what
+             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png" alt=""></i><span>Check what
                      <br>people say about.</span></h2>
          </div>
          <div class="carousel-box">
@@ -970,7 +975,7 @@ while ($loop->have_posts()) : $loop->the_post();
      <div class="auto-container">
          <div class="title-box centered">
              <div class="dots"><span></span></div>
-             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span>Latest news &
+             <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png" alt=""></i><span>Latest news &
                      <br>update</span></h2>
          </div>
          <div class="news-box">

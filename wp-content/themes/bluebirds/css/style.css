@@ -1129,7 +1129,7 @@ form label.error{
 .main-header .main-box .logo-box .logo img{
   position: relative;
   display: block;
-  height: 70px;
+  height: 90px;
   z-index: 1;
 }
 
@@ -2670,7 +2670,7 @@ body.visible-sidebar{
   top: 0;
   width: 2000px;
   height: 100%;
-  background: #FF8F1F;
+  background: #1256DD;
   -ms-transform: skewX(-30deg);
   transform: skewX(-30deg);
 }
@@ -2701,12 +2701,12 @@ body.visible-sidebar{
 
 .cta-one .inner .content .phone .icon{
   position: relative;
-  color: #FF8F1F;
+  color: #1256DD;
   padding-right: 20px;
 }
 
 .cta-one .inner .content .phone a:hover{
-  color: #FF8F1F;
+  color: #1256DD;
 }
 
 /*** 
@@ -3390,7 +3390,7 @@ body.visible-sidebar{
 
 .why-us .auto-container{
   max-width: 1920px;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .why-us .title-box{
@@ -4399,7 +4399,7 @@ body.visible-sidebar{
   left: 0;
   bottom: 0;
   width: 36px;
-  border-bottom: 3px solid #FF8F1F;
+  border-bottom: 3px solid #1256DD;
 }
 
 .main-footer .about{
@@ -4437,7 +4437,7 @@ body.visible-sidebar{
   left: 0;
   top: 5px;
   font-size: 36px;
-  color: #ff8f1f;
+  color: #1256DD;
 }
 
 .main-footer .about .phone{
@@ -5916,7 +5916,7 @@ body.visible-sidebar{
 
 .why-us-three{
   position: relative;
-  padding: 130px 0px 100px;
+  padding: 25px 0px 25px;
   background:url(../images/banner2.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -5950,7 +5950,7 @@ body.visible-sidebar{
     left: -6%;
     right: 68%;
     bottom: 22px;
-    background-color: #FF8F1F;
+    background-color: #1256DD;
     border-radius: 10px;
 }
 .now-button a{
@@ -5969,8 +5969,8 @@ body.visible-sidebar{
   margin-left: 0;
   position: relative;
   z-index: 9999;
-  color: #1256DD;
-  text-shadow: 3px 3px 0px #1256DD;
+  color: #000;
+/*  text-shadow: 3px 3px 0px #000;*/
 }
 .subtitle{
   color:#1256DD;
@@ -6838,7 +6838,7 @@ body.visible-sidebar{
   width: 100px;
   height: 100px;
   background: rgba(255, 143, 31, 0.1);
-  color: #FF8F1F;
+  color: #1256DD;
   font-size: 30px;
   line-height: 100px;
   text-align: center;
@@ -7364,12 +7364,12 @@ body.visible-sidebar{
 
 .bannercntpb .cursor--large {
   --size: 40px;
-  border: 2px solid #FF8F1F;
+  border: 2px solid #1256DD;
 }
 
 .bannercntpb .cursor--small {
   --size: 10px;
-  background: #FF8F1F;
+  background: #1256DD;
   transform: translate(-50%, -50%);
 }
 
@@ -7515,6 +7515,7 @@ body.visible-sidebar{
 
 .text-animation .color{
   color: #FF8F1F;
+  color: #1256DD;
 }
 
 @keyframes fade-in {
@@ -7610,7 +7611,7 @@ body.visible-sidebar{
 }
 .packege-image img{
   width: 100%;
-  height: 489px;
+  height: auto;
 }
 .map iframe{
   height: 500px;
@@ -7862,7 +7863,59 @@ body.visible-sidebar{
 }
 
 
-.
+.bannercntpb .bg-video-wrap .banner-button {
+	display: flex;
+}
+.bannercntpb .bg-video-wrap .banner-button a {
+	color: #fff;
+	font-size:16px;
+	font-weight: 500;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #2D77E4;
+    border-radius: 5px 5px 5px 5px;
+    padding: 13px 40px 13px 40px;
+	background-color: #2D77E4;
+	cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    outline: none;
+    position: relative;
+    transition: all .3s ease-out;
+    z-index: 0;
+    text-align: center;
+	overflow: hidden;
+	margin: 0 20px;
+}
+.bannercntpb .bg-video-wrap .banner-button a:hover {
+	color: #2D77E4;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #FFFFFF;
+	background-color: #fff;
+}
+.bannercntpb .bg-video-wrap .banner-button a:after {
+	content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all .3s ease-out;
+    background-color: #fff;
+	width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.bannercntpb .bg-video-wrap .banner-button a:hover:after {
+	height: 260%;
+    opacity: 1;
+}
+
+
+.testimonial-section .ti-widget .ti-reviews-container .ti-reviews-container-wrapper .ti-review-item:nth-child(6) {
+  display: none;
+}
 
 
 

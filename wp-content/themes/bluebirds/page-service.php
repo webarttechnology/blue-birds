@@ -30,7 +30,7 @@ get_header();
                 <div class="inner wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms">
                     <div class="title-box">
                         <div class="dots"><span></span></div>
-                        <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg"
+                        <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png"
                                     alt=""></i><span><?php echo get_field('banner_bottom_main_heading',5); ?> </span></h2>
                     </div>
                     <div class="text-content text"><?php echo get_field('banner_bottom_subheading',5); ?></div>
@@ -123,7 +123,7 @@ get_header();
     <div class="auto-container">
         <div class="title-box">
             <div class="dots"><span></span></div>
-            <h2><i class="bg-vector"><img src="images/resource/title-pattern-1.svg" alt=""></i><span> Latest Resources
+            <h2><i class="bg-vector"><img src="images/resource/Sign.png" alt=""></i><span> Latest Resources
                 </span></h2>
         </div>
         <div class="carousel-box">
@@ -134,7 +134,7 @@ get_header();
                         <div class="image-box">
                             <div class="image"><a href="#"><img src="images/resource/image-11.jpg" alt="" title=""></a>
                             </div>
-                            <div class="icon-box"><img src="images/resource/steering-icon.svg" alt="" title=""></div>
+                            <div class="icon-box"><img src="images/resource/Steering.png" alt="" title=""></div>
                         </div>
                         <div class="mid-box">
                             <h4><a href="#">Alberta Road Test Booking</a></h4>
@@ -149,7 +149,7 @@ get_header();
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="#"><img src="images/alberta_drivers- guide-min.png"></a></div>
-                            <div class="icon-box"><img src="images/resource/steering-icon.svg" alt="" title=""></div>
+                            <div class="icon-box"><img src="images/resource/Steering.png" alt="" title=""></div>
                         </div>
                         <div class="mid-box">
                             <h4><a href="#">Alberta Drivers Guide (2023)</a></h4>
@@ -164,7 +164,7 @@ get_header();
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="#"><img src="images/resource/image-13.jpg"></a></div>
-                            <div class="icon-box"><img src="images/resource/steering-icon.svg" alt="" title=""></div>
+                            <div class="icon-box"><img src="images/resource/Steering.png" alt="" title=""></div>
                         </div>
                         <div class="mid-box">
                             <h4><a href="#">Class 7 Practice Test</a></h4>
@@ -179,7 +179,7 @@ get_header();
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="#"><img src="images/alberta_transportation-min.jpg"></a></div>
-                            <div class="icon-box"><img src="images/resource/steering-icon.svg" alt="" title=""></div>
+                            <div class="icon-box"><img src="images/resource/Steering.png" alt="" title=""></div>
                         </div>
                         <div class="mid-box">
                             <h4><a href="#">Alberta Transportation</a></h4>
@@ -193,7 +193,7 @@ get_header();
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="#"><img src="images/traffic_ safety programs-min.jpg"></a></div>
-                            <div class="icon-box"><img src="images/resource/steering-icon.svg" alt="" title=""></div>
+                            <div class="icon-box"><img src="images/resource/Steering.png" alt="" title=""></div>
                         </div>
                         <div class="mid-box">
                             <h4><a href="#">Traffic Safety Programs</a></h4>
@@ -363,7 +363,7 @@ if($carrental){
     <div class="auto-container">
         <div class="title-box">
             <div class="dots"><span></span></div>
-            <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span> <?php echo get_field('resources_main_heading',5); ?>
+            <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png" alt=""></i><span> <?php echo get_field('resources_main_heading',5); ?>
                 </span></h2>
         </div>
         <div class="carousel-box">
@@ -390,7 +390,7 @@ while ($loop->have_posts()) : $loop->the_post();
                         <div class="image-box">
                             <div class="image"><a href="<?php the_permalink(); ?>"><img src="<?php echo $image; ?>" alt="" title=""></a>
                             </div>
-                            <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
+                            <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Steering.png" alt="" title=""></div>
                         </div>
                         <div class="mid-box">
                             <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
@@ -493,7 +493,7 @@ while ($loop->have_posts()) : $loop->the_post();
                 <div class="inner wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms">
                     <div class="title-box">
                         <div class="dots"><span></span></div>
-                        <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg"
+                        <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png"
                                     alt=""></i><span><?php echo get_field('banner_bottom_main_heading',5); ?> </span></h2>
                     </div>
                     <div class="text-content text"><?php echo get_field('banner_bottom_subheading',5); ?></div>
@@ -586,7 +586,7 @@ while ($loop->have_posts()) : $loop->the_post();
     <div class="auto-container">
         <div class="title-box">
             <div class="dots"><span></span></div>
-            <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/title-pattern-1.svg" alt=""></i><span> <?php echo get_field('resources_main_heading',5); ?>
+            <h2><i class="bg-vector"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Sign.png" alt=""></i><span> <?php echo get_field('resources_main_heading',5); ?>
                 </span></h2>
         </div>
         <div class="carousel-box">
@@ -613,7 +613,7 @@ while ($loop->have_posts()) : $loop->the_post();
                         <div class="image-box">
                             <div class="image"><a href="<?php echo get_field('resource_link'); ?>"><img src="<?php echo $image; ?>" alt="" title=""></a>
                             </div>
-                            <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/steering-icon.svg" alt="" title=""></div>
+                            <div class="icon-box"><img src="<?php echo get_template_directory_uri(); ?>/images/resource/Steering.png" alt="" title=""></div>
                         </div>
                         <div class="mid-box">
                             <h4><a href="<?php echo get_field('resource_link'); ?>"><?php the_title(); ?></a></h4>

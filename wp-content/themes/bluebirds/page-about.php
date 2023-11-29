@@ -179,7 +179,7 @@
             <div class="inner wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms"
                style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInLeft;">
                <div class="title-box style-two">
-                  <h2><span><?php echo get_field('our_best_feature_main_heading'); ?></span></h2>
+                  <h2><span><?php //echo get_field('our_best_feature_main_heading'); ?></span></h2>
                </div>
                <div class="container">
                   <div class="clearfix">
@@ -328,9 +328,9 @@
                 </div> --> 
 
          <div class="col-md-12">
-            <div class="btnprty now-button">
-               <a href="<?php echo get_field('best_feature_section_button_link'); ?>" class="dstvbtn"><?php echo get_field('best_feature_section_button'); ?></a>
-            </div>
+            <!-- <div class="btnprty now-button">
+               <a href="<?php //echo get_field('best_feature_section_button_link'); ?>" class="dstvbtn"><?php //echo get_field('best_feature_section_button'); ?></a>
+            </div> -->
          </div>
       </div>
    </div>
